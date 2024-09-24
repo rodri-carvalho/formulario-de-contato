@@ -69,7 +69,7 @@
     background: #FFF;
     font-family: Roboto, sans-serif;
     letter-spacing: 0.02rem;
-    
+
 }
 
 .main .form textarea {
@@ -125,18 +125,35 @@
     transform: translateY(-30px);
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-.main .form input.preenchido{
+.main .form input.preenchido {
     border: 1.5px solid #00C22B;
 }
 
-.main .form textarea.preenchido{
+.main .form textarea.preenchido {
     border: 1.5px solid #00C22B;
 }
 
-textarea{
+textarea {
     resize: none;
+}
+
+@media (max-width: 750px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0 !important;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
